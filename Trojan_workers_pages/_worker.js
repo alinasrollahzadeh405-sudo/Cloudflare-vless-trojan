@@ -532,7 +532,7 @@ export { worker_default as default };
 function getygkkkConfig(Pswd, hostName) {
   const w\u0074\u0072\u006F\u006A\u0061\u006Ews = atob(btoa(`\u0074\u0072\u006F\u006A\u0061\u006E://${Pswd}@${CDNIP}:8880?security=none&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#${hostName}`));
   const p\u0074\u0072\u006F\u006A\u0061\u006Ewstls = atob(btoa(`\u0074\u0072\u006F\u006A\u0061\u006E://${Pswd}@${CDNIP}:8443?security=tls&type=ws&host=${hostName}&sni=${hostName}&fp=random&path=%2F%3Fed%3D2560#${hostName}`));
-  const note = `甬哥博客地址：https://ygkkk.blogspot.com\n甬哥YouTube频道：https://www.youtube.com/@ygkkk\n甬哥TG电报群组：https://t.me/ygkkktg\n甬哥TG电报频道：https://t.me/ygkkktgpd\n\nProxyIP全局运行中：${proxyIP}:${proxyPort}`;
+  const note = ` Information Address：https://ygkkk.blogspot.com\n Information YouTube Information ：https://www.youtube.com/@ygkkk\n Information TG Information ：https://t.me/ygkkktg\n Information TG Information ：https://t.me/ygkkktgpd\n\nProxyIP Information ：${proxyIP}:${proxyPort}`;
   const ty = `https://${hostName}/${Pswd}/ty`
   const cl = `https://${hostName}/${Pswd}/cl`
   const sb = `https://${hostName}/${Pswd}/sb`
@@ -569,7 +569,7 @@ function copyToClipboard(text) {
   input.select();
   document.execCommand('Copy');
   document.body.removeChild(input);
-  alert('已复制到剪贴板');
+  alert(' Information Copy Information ');
 }
 </script>
 `;
@@ -582,7 +582,7 @@ ${displayHtml}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Cloudflare-workers/pages-\u0074\u0072\u006F\u006A\u0061\u006E代理脚本 V25.5.4</h1>
+            <h1>Cloudflare-workers/pages-\u0074\u0072\u006F\u006A\u0061\u006EProxyScript V25.5.4</h1>
 			<hr>
             <p>${noteshow}</p>
             <hr>
@@ -590,31 +590,31 @@ ${displayHtml}
 			<hr>
             <br>
             <br>
-            <h3>1：CF-workers-\u0074\u0072\u006F\u006A\u0061\u006E+ws节点</h3>
+            <h3>1：CF-workers-\u0074\u0072\u006F\u006A\u0061\u006E+wsNode</h3>
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>Node Information ：</th>
+						<th> Information Node Information ：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">关闭了TLS加密，无视域名阻断</td>
+						<td class="limited-width"> Information TLS Information ， Information </td>
 						<td class="limited-width">${w\u0074\u0072\u006F\u006A\u0061\u006Ews}</td>
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${w\u0074\u0072\u006F\u006A\u0061\u006Ews}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${w\u0074\u0072\u006F\u006A\u0061\u006Ews}')"> Information Copy Information </button></td>
 					</tr>
 				</tbody>
 			</table>
-            <h5>客户端参数如下：</h5>
+            <h5> Information Parameters Information ：</h5>
             <ul>
-                <li>客户端地址(address)：自定义的域名 或者 优选域名 或者 优选IP 或者 反代IP</li>
-                <li>端口(port)：7个http端口可任意选择(80、8080、8880、2052、2082、2086、2095)，或反代IP对应端口</li>
-                <li>密码(password)：${Pswd}</li>
-                <li>传输协议(network)：ws 或者 websocket</li>
-                <li>伪装域名(host)：${hostName}</li>
-                <li>路径(path)：/?ed=2560</li>
-                <li>传输安全(TLS)：关闭</li>
+                <li> Information Address(address)：Custom Information   Information   Information   Information   Information IP  Information   Information IP</li>
+                <li> Information (port)：7 Information http Information (80、8080、8880、2052、2082、2086、2095)， Information IP Information </li>
+                <li> Information (password)：${Pswd}</li>
+                <li> Information (network)：ws  Information  websocket</li>
+                <li> Information (host)：${hostName}</li>
+                <li> Information (path)：/?ed=2560</li>
+                <li> Information (TLS)： Information </li>
             </ul>
             <hr>
 			<hr>
@@ -625,49 +625,49 @@ ${displayHtml}
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>Node Information ：</th>
+						<th> Information Node Information ：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">启用了TLS加密，<br>如果客户端支持分片(Fragment)功能，建议开启，防止域名阻断</td>
+						<td class="limited-width"> Information TLS Information ，<br> Information (Fragment)Features， Information ， Information </td>
 						<td class="limited-width">${p\u0074\u0072\u006F\u006A\u0061\u006Ewstls}</td>	
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${p\u0074\u0072\u006F\u006A\u0061\u006Ewstls}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${p\u0074\u0072\u006F\u006A\u0061\u006Ewstls}')"> Information Copy Information </button></td>
 					</tr>
 				</tbody>
 			</table>
-            <h5>客户端参数如下：</h5>
+            <h5> Information Parameters Information ：</h5>
             <ul>
-                <li>客户端地址(address)：自定义的域名 或者 优选域名 或者 优选IP 或者 反代IP</li>
-                <li>端口(port)：6个https端口可任意选择(443、8443、2053、2083、2087、2096)，或反代IP对应端口</li>
-                <li>密码(password)：${Pswd}</li>
-                <li>传输协议(network)：ws 或者 websocket</li>
-                <li>伪装域名(host)：${hostName}</li>
-                <li>路径(path)：/?ed=2560</li>
-                <li>传输安全(TLS)：开启</li>
-                <li>跳过证书验证(allowlnsecure)：false</li>
+                <li> Information Address(address)：Custom Information   Information   Information   Information   Information IP  Information   Information IP</li>
+                <li> Information (port)：6 Information https Information (443、8443、2053、2083、2087、2096)， Information IP Information </li>
+                <li> Information (password)：${Pswd}</li>
+                <li> Information (network)：ws  Information  websocket</li>
+                <li> Information (host)：${hostName}</li>
+                <li> Information (path)：/?ed=2560</li>
+                <li> Information (TLS)： Information </li>
+                <li> Information (allowlnsecure)：false</li>
 			</ul>
 			<hr>
 			<hr>
 			<hr>
 			<br>	
 			<br>
-			<h3>3：聚合通用、Clash-meta、Sing-box订阅链接如下：</h3>
+			<h3>3： Information 、Clash-meta、Sing-boxSubscription Information ：</h3>
 			<hr>
-			<p>注意：<br>1、默认每个订阅链接包含TLS+非TLS共13个端口节点 (Clash节点仅6个TLS节点)<br>2、当前workers域名作为订阅链接，需通过代理进行订阅更新<br>3、如使用的客户端不支持分片功能，则TLS节点不可用</p>	
+			<p>Note：<br>1、Default Information Subscription Information TLS+ Information TLS Information 13 Information Node (ClashNode Information 6 Information TLSNode)<br>2、 Information workers Information Subscription Information ， Information Proxy Information SubscriptionUpdate<br>3、 Information Usage Information Features， Information TLSNode Information </p>	
                         <hr>
 
 
 			<table class="table">
 					<thead>
 						<tr>
-							<th>聚合通用分享链接 (可直接导入客户端，80系非tls节点在某些客户端可能被强制开启TLS，且不可用)：</th>
+							<th> Information  ( Information ，80 Information tlsNode Information TLS， Information )：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${wk\u0074\u0072\u006F\u006A\u0061\u006Eshare}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${wk\u0074\u0072\u006F\u006A\u0061\u006Eshare}')"> Information Copy Information </button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -675,13 +675,13 @@ ${displayHtml}
 			<table class="table">
 					<thead>
 						<tr>
-							<th>聚合通用订阅链接：</th>
+							<th> Information Subscription Information ：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${ty}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${ty}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${ty}')"> Information Copy Information </button></td>
 						</tr>
 					</tbody>
 				</table>	
@@ -689,13 +689,13 @@ ${displayHtml}
 				<table class="table">
 						<thead>
 							<tr>
-								<th>Clash-meta订阅链接：</th>
+								<th>Clash-metaSubscription Information ：</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="limited-width">${cl}</td>	
-								<td><button class="btn btn-primary" onclick="copyToClipboard('${cl}')">点击复制链接</button></td>
+								<td><button class="btn btn-primary" onclick="copyToClipboard('${cl}')"> Information Copy Information </button></td>
 							</tr>
 						</tbody>
 					</table>
@@ -703,13 +703,13 @@ ${displayHtml}
 					<table class="table">
 					<thead>
 						<tr>
-							<th>Sing-box订阅链接：</th>
+							<th>Sing-boxSubscription Information ：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${sb}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${sb}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${sb}')"> Information Copy Information </button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -729,7 +729,7 @@ ${displayHtml}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Cloudflare-workers/pages-\u0074\u0072\u006F\u006A\u0061\u006E代理脚本 V25.5.4</h1>
+            <h1>Cloudflare-workers/pages-\u0074\u0072\u006F\u006A\u0061\u006EProxyScript V25.5.4</h1>
 			<hr>
             <p>${noteshow}</p>
             <hr>
@@ -737,52 +737,52 @@ ${displayHtml}
 			<hr>
             <br>
             <br>
-            <h3>1：CF-pages/workers/自定义域-\u0074\u0072\u006F\u006A\u0061\u006E+ws+tls节点</h3>
+            <h3>1：CF-pages/workers/Custom Information -\u0074\u0072\u006F\u006A\u0061\u006E+ws+tlsNode</h3>
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>Node Information ：</th>
+						<th> Information Node Information ：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">启用了TLS加密，<br>如果客户端支持分片(Fragment)功能，可开启，防止域名阻断</td>
+						<td class="limited-width"> Information TLS Information ，<br> Information (Fragment)Features， Information ， Information </td>
 						<td class="limited-width">${p\u0074\u0072\u006F\u006A\u0061\u006Ewstls}</td>
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${p\u0074\u0072\u006F\u006A\u0061\u006Ewstls}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${p\u0074\u0072\u006F\u006A\u0061\u006Ewstls}')"> Information Copy Information </button></td>
 					</tr>
 				</tbody>
 			</table>
-            <h5>客户端参数如下：</h5>
+            <h5> Information Parameters Information ：</h5>
             <ul>
-                <li>客户端地址(address)：自定义的域名 或者 优选域名 或者 优选IP 或者 反代IP</li>
-                <li>端口(port)：6个https端口可任意选择(443、8443、2053、2083、2087、2096)，或反代IP对应端口</li>
-                <li>密码(password)：${Pswd}</li>
-                <li>传输协议(network)：ws 或者 websocket</li>
-                <li>伪装域名(host)：${hostName}</li>
-                <li>路径(path)：/?ed=2560</li>
-                <li>传输安全(TLS)：开启</li>
-                <li>跳过证书验证(allowlnsecure)：false</li>
+                <li> Information Address(address)：Custom Information   Information   Information   Information   Information IP  Information   Information IP</li>
+                <li> Information (port)：6 Information https Information (443、8443、2053、2083、2087、2096)， Information IP Information </li>
+                <li> Information (password)：${Pswd}</li>
+                <li> Information (network)：ws  Information  websocket</li>
+                <li> Information (host)：${hostName}</li>
+                <li> Information (path)：/?ed=2560</li>
+                <li> Information (TLS)： Information </li>
+                <li> Information (allowlnsecure)：false</li>
 			</ul>
             <hr>
 			<hr>
 			<hr>
             <br>
             <br>
-			<h3>2：聚合通用、Clash-meta、Sing-box订阅链接如下：</h3>
+			<h3>2： Information 、Clash-meta、Sing-boxSubscription Information ：</h3>
 			<hr>
-			<p>注意：以下订阅链接仅6个TLS端口节点</p>
+			<p>Note： Information Subscription Information 6 Information TLS Information Node</p>
 			<hr>
 
 			<table class="table">
 					<thead>
 						<tr>
-							<th>聚合通用分享链接 (可直接导入客户端)：</th>
+							<th> Information  ( Information )：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${pg\u0074\u0072\u006F\u006A\u0061\u006Eshare}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${pg\u0074\u0072\u006F\u006A\u0061\u006Eshare}')"> Information Copy Information </button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -791,13 +791,13 @@ ${displayHtml}
 			<table class="table">
 					<thead>
 						<tr>
-							<th>聚合通用订阅链接：</th>
+							<th> Information Subscription Information ：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${pty}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${pty}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${pty}')"> Information Copy Information </button></td>
 						</tr>
 					</tbody>
 				</table>	
@@ -805,13 +805,13 @@ ${displayHtml}
 				<table class="table">
 						<thead>
 							<tr>
-								<th>Clash-meta订阅链接：</th>
+								<th>Clash-metaSubscription Information ：</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="limited-width">${pcl}</td>	
-								<td><button class="btn btn-primary" onclick="copyToClipboard('${pcl}')">点击复制链接</button></td>
+								<td><button class="btn btn-primary" onclick="copyToClipboard('${pcl}')"> Information Copy Information </button></td>
 							</tr>
 						</tbody>
 					</table>
@@ -819,13 +819,13 @@ ${displayHtml}
 					<table class="table">
 					<thead>
 						<tr>
-							<th>Sing-box订阅链接：</th>
+							<th>Sing-boxSubscription Information ：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${psb}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${psb}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${psb}')"> Information Copy Information </button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -954,7 +954,7 @@ proxies:
       Host: ${hostName}
 
 proxy-groups:
-- name: 负载均衡
+- name:  Information 
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -966,7 +966,7 @@ proxy-groups:
     - CF_T12_${IP12}_${PT12}
     - CF_T13_${IP13}_${PT13}
 
-- name: 自动选择
+- name:  Information 
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -979,11 +979,11 @@ proxy-groups:
     - CF_T12_${IP12}_${PT12}
     - CF_T13_${IP13}_${PT13}
 
-- name: 🌍选择代理
+- name: 🌍 Information Proxy
   type: select
   proxies:
-    - 负载均衡
-    - 自动选择
+    -  Information 
+    -  Information 
     - DIRECT
     - CF_T8_${IP8}_${PT8}
     - CF_T9_${IP9}_${PT9}
@@ -995,7 +995,7 @@ proxy-groups:
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理`
+  - MATCH,🌍 Information Proxy`
 }
 	
 function getsbConfig(Pswd, hostName) {
@@ -1597,7 +1597,7 @@ proxies:
       Host: ${hostName}
 
 proxy-groups:
-- name: 负载均衡
+- name:  Information 
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -1609,7 +1609,7 @@ proxy-groups:
     - CF_T12_${IP12}_${PT12}
     - CF_T13_${IP13}_${PT13}
 
-- name: 自动选择
+- name:  Information 
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -1622,11 +1622,11 @@ proxy-groups:
     - CF_T12_${IP12}_${PT12}
     - CF_T13_${IP13}_${PT13}
 
-- name: 🌍选择代理
+- name: 🌍 Information Proxy
   type: select
   proxies:
-    - 负载均衡
-    - 自动选择
+    -  Information 
+    -  Information 
     - DIRECT
     - CF_T8_${IP8}_${PT8}
     - CF_T9_${IP9}_${PT9}
@@ -1638,7 +1638,7 @@ proxy-groups:
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理`
+  - MATCH,🌍 Information Proxy`
 }
 		
 function getpsbConfig(Pswd, hostName) {
