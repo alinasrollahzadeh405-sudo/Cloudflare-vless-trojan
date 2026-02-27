@@ -1,5 +1,5 @@
-const pyip = ['[2a00:1098:2b::1:6815:5881]','pyip.ygkkk.dpdns.org']; //自定义proxyip：''之间可使用IP或者域名，IPV6需[]，不支持带端口
-const token = '';//''之间可使用任意字符密码，客户端token保持一致
+const pyip = ['[2a00:1098:2b::1:6815:5881]','pyip.ygkkk.dpdns.org']; //Customproxyip：'' Information UsageIP Information ，IPV6 Information []， Information 
+const token = '';//'' Information Usage Information ， Information token Information 
 
 const WS_READY_STATE_OPEN = 1;
 const WS_READY_STATE_CLOSING = 2;
@@ -11,8 +11,8 @@ export default {
       const upgradeHeader = request.headers.get('Upgrade');
       if (!upgradeHeader || upgradeHeader.toLowerCase() !== 'websocket') {
         return new URL(request.url).pathname === '/'
-          ? new Response('恭喜，当前网址可用于CF Workers/Pages的Socks5或Http本地代理服务', { status: 200 })
-          : new Response('当前网址出错，请确认', { status: 426 });
+          ? new Response(' Information ， Information CF Workers/Pages Information Socks5 Information Http Information Proxy Information ', { status: 200 })
+          : new Response(' Information ， Information ', { status: 426 });
       }
       if (token && request.headers.get('Sec-WebSocket-Protocol') !== token) {
         return new Response('Unauthorized', { status: 401 });
