@@ -26,7 +26,7 @@ case "$(uname -m)" in
         cpu=mipsle
 	;;
 	* )
-	echo "当前架构为$(uname -m)，暂不支持"
+	echo " Information $(uname -m)， Information "
 	exit
 	;;
 esac
@@ -38,30 +38,30 @@ awk -F ',' '$2 ~ /TIA|VIE|MSQ|BRU|SOF|ZAG|LCA|PRG|CPH|TLL|HEL|BOD|LYS|MRS|CDG|TB
 }
 
 #if timeout 3 ping -c 2 google.com &> /dev/null; then
-#echo "当前网络已开代理，为确保准确性，请关闭代理"
+#echo " Information Proxy， Information ， Information Proxy"
 #else
-#echo "当前网络已关闭代理，继续进行……"
+#echo " Information Proxy， Information ……"
 #fi
 
 if timeout 3 ping -c 2 2400:3200::1 &> /dev/null; then
-echo "当前网络支持IPV4+IPV6"
+echo " Information IPV4+IPV6"
 else
-echo "当前网络仅支持IPV4"
+echo " Information IPV4"
 fi
 rm -rf 6.csv 4.csv
-echo "甬哥Github项目  ：github.com/yonggekkk"
-echo "甬哥Blogger博客 ：ygkkk.blogspot.com"
-echo "甬哥YouTube频道 ：www.youtube.com/@ygkkk"
+echo " Information GithubProject  ：github.com/yonggekkk"
+echo " Information Blogger Information  ：ygkkk.blogspot.com"
+echo " Information YouTube Information  ：www.youtube.com/@ygkkk"
 echo
-echo "如果提示：运行出错，请检查网络依赖环境！！！请先通过代理运行一次，后续只用快捷运行：bash cf.sh"
+echo " Information ： Information ， Information Environment！！！ Information Proxy Information ， Information ：bash cf.sh"
 echo
-echo "请选择优选类型"
-echo "1、仅IPV4优选"
-echo "2、仅IPV6优选"
-echo "3、IPV4+IPV6优选"
-echo "4、重置配置文件"
-echo "5、退出"
-read -p "请选择【1-5】:" menu
+echo " Information "
+echo "1、 Information IPV4 Information "
+echo "2、 Information IPV6 Information "
+echo "3、IPV4+IPV6 Information "
+echo "4、 Information Config Information "
+echo "5、 Information "
+read -p " Information 【1-5】:" menu
 if [ ! -e cf ]; then
 curl -L -o cf -# --retry 2 --insecure https://raw.githubusercontent.com/yonggekkk/Cloudflare_vless_trojan/main/cf/$cpu
 chmod +x cf
@@ -92,33 +92,33 @@ ip=6
 result
 elif [ "$menu" = "4" ]; then
 rm -rf 6.csv 4.csv locations.json ips-v4.txt ips-v6.txt cf cf.sh
-echo "已重置成功" && exit
+echo " Information Success" && exit
 else
 exit
 fi
 clear
 if [ -e 4.csv ]; then
-echo "IPV4最佳可用节点如下（取前三名）："
-echo "美国IPV4优选结果："
+echo "IPV4 Information Node Information （ Information ）："
+echo " Information IPV4 Information ："
 cat US-4.csv
 echo
-echo "亚洲IPV4优选结果："
+echo " Information IPV4 Information ："
 cat AS-4.csv
 echo
-echo "欧洲IPV4优选结果："
+echo " Information IPV4 Information ："
 cat EU-4.csv
 fi
 if [ -e 6.csv ]; then
-echo "IPV6最佳可用节点如下（取前三名）："
-echo "美国IPV6优选结果："
+echo "IPV6 Information Node Information （ Information ）："
+echo " Information IPV6 Information ："
 cat US-6.csv
 echo
-echo "亚洲IPV6优选结果："
+echo " Information IPV6 Information ："
 cat AS-6.csv
 echo
-echo "欧洲IPV6优选结果："
+echo " Information IPV6 Information ："
 cat EU-6.csv
 fi
 if [ ! -e 4.csv ] && [ ! -e 6.csv ]; then
-echo "运行出错，请检查网络依赖环境"
+echo " Information ， Information Environment"
 fi
