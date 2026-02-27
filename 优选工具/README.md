@@ -1,34 +1,34 @@
-# 关于此python脚本
+#  Information pythonScript
 
-## 开发原因
+##  Information 
 
-### 在优选完后我们需要手动把变量一个个导入到CF_Worker里，翻每个txt,csv优选后结果很麻烦，此脚本可一键导入变量
+###  Information CF_Worker Information ， Information txt,csv Information ， Information Script Information 
 
 ---
 
-## 使用方法
+## Usage Information 
 
-### 1. 测试结果放入指定文件夹
+### 1.  Information 
 
-#### 优选完各文件夹内IP & 域名后，将IP & 域名测试结果复制，在domain & ip路径下打开文件夹History并按照YYYY_MM-DD格式创建今天日期文件夹，把结果复制到里面
+####  Information IP &  Information ， Information IP &  Information Copy， Information domain & ip Information History Information YYYY_MM-DD Information ， Information Copy Information 
 
 ![01-1](.photos/01-1.webp)
 
-##### 💡Tip：IPv6在文件名后面加上_v6后缀
+##### 💡Tip：IPv6 Information _v6 Information 
 
 ![01-2](.photos/01-2.webp)
 
-##### 💡Tip2：同时测速v4，v6可以分别复制到对应IPv4 & IPv6文件夹分别打开使用
+##### 💡Tip2： Information v4，v6 Information Copy Information IPv4 & IPv6 Information Usage
 
-### 2. 生成变量配置
+### 2.  Information Config
 
-#### 运行此脚本，他会集合起来自动复制到剪切板并创建相对根目录下worker.env文件存放。
+####  Information Script， Information Copy Information worker.env Information 。
 
 ![02](.photos/02.webp)
 
-### 3. 一键导入变量
+### 3.  Information 
 
-#### 在CF_Worker-变量和机密中，点击添加-点击变量名称下方黑框CTRL+V，你会看到变量批量导入进去，其他变量如果没填完点击保存版本，所有的搞完了可直接部署。
+####  Information CF_Worker- Information ， Information - Information CTRL+V， Information ， Information ， Information 。
 
 ![03-1](.photos/03-1.webp)
 ![03-2](.photos/03-2.mp4)
@@ -37,50 +37,50 @@ https://github.com/user-attachments/assets/108476a0-e157-48c6-8a0d-3e9d8ef2ef92
 
 ---
 
-## 分配策略
+##  Information 
 
-- ### 有 IPv6 时：
+- ###  Information  IPv6  Information ：
   
-  ### 80系 3 IPv4 + 2 IPv6 + 2 域名
+  ### 80 Information  3 IPv4 + 2 IPv6 + 2  Information 
   
-  ### 443系采取 2 IPv4 + 2 IPv6 + 2 域名
+  ### 443 Information  2 IPv4 + 2 IPv6 + 2  Information 
 
-- ### 无 IPv6 时：
+- ###  Information  IPv6  Information ：
   
-  ### 80系 4 IPv4 + 3 域名
+  ### 80 Information  4 IPv4 + 3  Information 
   
-  ### 443系 3 IPv4 + 3 域名
+  ### 443 Information  3 IPv4 + 3  Information 
 
 ---
 
-## 目录结构解释
+##  Information 
 
-### 注：带*为程序必要条件
+###  Information ： Information * Information 
 
 ```ts
-优选工具             //所有工具合集
-│  README.md       //说明文档
-│  worker.env      //自动生成变量
-│  自动生成变量导入cf.py    //主程序
+ Information              // Information 
+│  README.md       // Information 
+│  worker.env      // Information 
+│   Information cf.py    // Information 
 │
-├─domain      //域名集
-│  │  CDN优选域名V23.8.18(电脑win64).exe     //域名优选工具
+├─domain      // Information 
+│  │  CDN Information V23.8.18( Information win64).exe     // Information 
 │  │
-│  └─History  //历史优选数据 *程序要读取最新的必要结构
-│      └─2026_02-11  //日期*
-│              CDNym.txt  //优选结果_域名*
+│  └─History  // Information  * Information 
+│      └─2026_02-11  // Information *
+│              CDNym.txt  // Information _ Information *
 │
-└─ip         //ip集
-    │  CF优选官方IP(可选部分地区电脑版).7z     //优选工具——本次使用
-    │  CF优选官方IP(无交互三地区电脑版).zip    //优选工具
-    │  CF优选官方IP(电脑版).zip              //优选工具
+└─ip         //ip Information 
+    │  CF Information IP( Information ).7z     // Information —— Information Usage
+    │  CF Information IP( Information ).zip    // Information 
+    │  CF Information IP( Information ).zip              // Information 
     │
-    ├─History   //历史优选数据 *程序要读取最新的必要结构
-    │  └─2026_02-11  //日期*
-    │          result.csv     //优选结果IPv4*
-    │          result_v6.csv  //优选结果IPv6*
+    ├─History   // Information  * Information 
+    │  └─2026_02-11  // Information *
+    │          result.csv     // Information IPv4*
+    │          result_v6.csv  // Information IPv6*
     │
-    ├─ipv4  //解压到这里可同时运行优选，结果文件复制到History/YYYY_MM-DD/result.csv
-    └─ipv6  //解压到这里可同时运行优选，结果文件复制到History/YYYY_MM-DD/result_v6.csv
+    ├─ipv4  // Information ， Information Copy Information History/YYYY_MM-DD/result.csv
+    └─ipv6  // Information ， Information Copy Information History/YYYY_MM-DD/result_v6.csv
 ```
 
